@@ -72,17 +72,17 @@ def update_power_by_id(id):
 def create_hero_power():
     data = request.get_json()
 
-    # Validate required fields
+    
     if not all(key in data for key in ["strength", "power_id", "hero_id"]):
         return jsonify({"errors": ["Missing required fields"]}), 400
 
-    # Check if Hero and Power exist
+    
     hero = Hero.query.get(data["hero_id"])
     power = Power.query.get(data["power_id"])
     if not hero or not power:
         return jsonify({"errors": ["Hero or Power not found"]}), 404
 
-    # Create HeroPower safely
+    
     hero_power = HeroPower(
         strength=data["strength"],
         hero_id=data["hero_id"],
@@ -91,7 +91,7 @@ def create_hero_power():
     db.session.add(hero_power)
     db.session.commit()
 
-    # Return structured response
+    
     response_data = hero_power.to_dict()
     response_data["hero"] = hero.to_dict_basic()
     response_data["power"] = power.to_dict_basic()
