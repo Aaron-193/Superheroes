@@ -17,7 +17,7 @@ This API provides the following functionalities:
 - **Update a Power Description** (`PATCH /powers/<id>`)
 - **Assign Powers to Heroes** (`POST /hero_powers`)
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 Follow these steps to set up the project on your local machine:
 
 1. **Clone the repository**:
@@ -43,7 +43,7 @@ Follow these steps to set up the project on your local machine:
    flask db upgrade
    ```
 
-## 🚦 Running the API
+### Running the API
 Start the Flask server using:
 ```bash
 python app.py
@@ -53,15 +53,15 @@ Once running, access the API at:
 http://127.0.0.1:5555
 ```
 
-## 🔥 API Endpoints
+## API Endpoints
 
-### 🦸 Heroes
+### Heroes
 | Method | Endpoint            | Description                |
 |--------|---------------------|----------------------------|
 | `GET`  | `/heroes`           | Retrieve all heroes       |
 | `GET`  | `/heroes/<id>`      | Retrieve a single hero    |
 
-### ⚡ Powers
+### Powers
 | Method | Endpoint             | Description                   |
 |--------|----------------------|-------------------------------|
 | `GET`  | `/powers`            | Retrieve all powers          |
@@ -73,7 +73,7 @@ http://127.0.0.1:5555
 |--------|------------------|----------------------------------|
 | `POST` | `/hero_powers`    | Assign a power to a hero        |
 
-## 📩 Example Requests
+## Example Requests
 
 ### **Create a HeroPower**
 #### **POST `/hero_powers`**
@@ -85,7 +85,7 @@ http://127.0.0.1:5555
 }
 ```
 
-#### ✅ **Successful Response**
+#### **Successful Response**
 ```json
 {
   "id": 11,
@@ -105,22 +105,12 @@ http://127.0.0.1:5555
 }
 ```
 
-## 📞 Support & Contact
+## Support & Contact
 For questions or issues, reach out via:
-- **GitHub Issues**: [Your Repository Issues](https://github.com/yourusername/superheroes-api/issues)
-- **Email**: your.email@example.com
+- **GitHub Issues**: [Your Repository Issues](https://github.com/Aaron-193/superheroes/issues)
+- **Email**: anr.ron193@gmail.com
 
 ## 🛠️ License
 This project is licensed under the **MIT License**.
 
----
 
-✅ **Includes Title & Description**  
-✅ **Clearly Shows Owner’s Name & Contact Info**  
-✅ **Provides Setup Instructions**  
-✅ **Highlights Features of the App**  
-✅ **Lists Support/Contact Details**  
-✅ **Includes License Information**  
-
-This ensures the README meets all the necessary requirements while remaining **concise, well-structured, and easy to follow**. 🚀 Let me know if you'd like refinements!  
-```
