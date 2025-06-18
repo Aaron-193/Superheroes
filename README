@@ -6,7 +6,7 @@ Welcome to the **Superheroes API**, a Flask-powered backend that manages superhe
 
 ## 👤 Owner
 **Developer:** Aaron Rashid  
-**GitHub Profile:** [My GitHub Profile](https://github.com/Aaron-193)
+**GitHub Profile:** (https://github.com/Aaron-193)
 
 ## 🚀 Features
 This API provides the following functionalities:
@@ -28,7 +28,7 @@ Follow these steps to set up the project on your local machine:
 
 2. **Create and activate a virtual environment**:
    ```bash
-   python -m venv env
+   python -m venv venv
    source env/bin/activate  # Mac/Linux
    env\Scripts\activate      # Windows
    ```
